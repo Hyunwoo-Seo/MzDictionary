@@ -1,0 +1,109 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../media/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.MzDicTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MzDicTitle a {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 100px;
+    color: black;
+    margin: 50px 0 0 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#searchbox {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    width: 800px;
+    height: 100px;
+    border: 4px black solid;
+    border-radius: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+#searchbox::placeholder {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.BrosweWordBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BrowseWord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    gap: 50px;
+}
+
+.BrowseWordContainer {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    border: 4px black solid;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.BrowseWordContainer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.BoardButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;;
+}
+
+.ToBoard {
+    width: 300px;
+    background-color: white;
+    color: black;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 30px;
+    border: 4px black solid;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.ToBoard a {
+    text-decoration: none;
+    color: black;
+}
