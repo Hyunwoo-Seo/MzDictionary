@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ConsonantPage.css">
+    <title>MZ 사전</title>
+</head>
+<body>
+    <div class="Back-Button" id="back">
+        <img src="../media/btn_back.png">
+    </div>
+
+    <div class="Header">
+        <a>ㅇ으로 시작하는 단어</a>
+    </div>
+
+    <div class="Dictionary-Container">
+        <div class="Dictionary" id="dictionaryList">
+        </div>
+    </div>
+
+    <script>
+        const dictionaryData = [
+            { title: "아바라", detail: "아이스바닐라라떼" },
+            { title: "아아", detail: "아이스 아메리카노" },
+            { title: "아이데이션하다", detail: "구글링하다" },
+            { title: "알잘딱깔센", detail: "'알아서 잘 딱 깔끔하고 센스 있게' 를 줄여서 표현한 말" },
+            { title: "어퍼웨어", detail: "화상회의나 개인방송시 상의만 신경쓰는 현상" },
+            { title: "억텐", detail: "억지 텐션의 줄임말" },
+            { title: "에어노마드족", detail: "미세먼지나 오염이 없는 깨끗한 공기를 찾아 가는 사람들을 뜻함" },
+            { title: "오저치고", detail: "'오늘 저녁 치킨 고?' 의 줄임말" },
+            { title: "옥메와까", detail: "옥동자 / 메가톤바 / 와일드바디 / 까마쿤의 앞글자를 따서 만든 줄임말" },
+            { title: "와우내", detail: "감탄사 WOW네" },
+            { title: "완내스", detail: "완전 내 스타일의 줄임말" },
+            { title: "윰차", detail: "유무 차별의 줄임말" },
+            { title: "인방", detail: "인터넷 방송의 줄임말" },
+            { title: "일코노미", detail: "'혼자서 밥을 먹고 혼자서 영화를 보고 혼자서 쇼핑을 하는 등의 '1인 경제활동'을 뜻하는 단어" },
+            { title: "이생망", detail: "이번 생은 망했다의 줄임말" },
+            { title: "애빼시", detail: "애교 빼면 시체의 줄임말" },
+            { title: "오운완", detail: "오늘 운동 완료의 줄임말" },
+            { title: "어쩔티비", detail: "어쩌라고의 뜻을 가진 신조어" },
+            { title: "오나전", detail: "완전히 오타 투성일때 하는 말" },
+            { title: "이왜진", detail: "이게 왜 진짜?의 줄임말" },
+            { title: "억까", detail: "억지로 까다의 줄임말" },
+            { title: "엄근진", detail: "엄격, 근엄, 진지의 첫자를 따서 합성한 말" },
+            { title: "워라밸", detail: "워크 라이프 밸런스의 줄임말" },
+            { title: "오저치고", detail: "'오늘 저녁은 치킨 고!' 오늘 저녁은 치킨 먹는 날의 줄임말" },
+            { title: "알빠임", detail: "내 알바 아님의 줄임말" },
+            { title: "오다망", detail: "'오늘 다이어트 망했다'의 줄임말" },
+            { title: "일취월장", detail: "'일요일에 취하면 월요일에 장난아니다' 라는 신조어" },
+            { title: "유하", detail: "유튜브 하이의 줄임말" },
+            { title: "이퇴백", detail: "직장에서 오래 일하지 못하고 쉽게 퇴사하는 20대를 일컫는 말" }
+        ];
+
+        const dictionaryContainer = document.getElementById('dictionaryList');
+
+        dictionaryData.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                <a class="Title">${item.title}</a>
+                <br>
+                <a class="Detail">${item.detail}</a>
+            `;
+            dictionaryContainer.appendChild(listItem);
+        });
+
+        document.getElementById("back").addEventListener("click", function() {
+            window.location.href = "../html/Main.html";
+        });
+    </script>
+
+</body>
+</html>

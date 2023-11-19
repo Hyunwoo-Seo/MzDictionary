@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/BorderWrite.css">
+    <title>MZ 사전</title>
+</head>
+<body>
+    <div class="Back-Button" id="back">
+        <img src="../media/btn_back.png">
+    </div>
+
+    <div class="Header">
+        <a>MZ 사전</a>
+    </div>
+
+    <div class = "Border-Container">
+        <div class = "Border">
+            <div class = "Title-Write">
+                <input type="text" placeholder="제목을 작성해주세요" id = "titlebox">
+            </div>
+            <div class = "Detail-Write">
+                <input type="text" placeholder="내용을 작성해주세요" id = "detailbox">
+            </div>
+            <div class = "Check-Button">
+                <div class = "Check">
+                    <a href ="#">저장하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    document.getElementById("back").addEventListener("click", function() {
+    window.location.href = "../html/Main.html";
+    });
+</script>
+
+    
+</body>
+</html>

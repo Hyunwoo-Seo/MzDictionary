@@ -1,0 +1,73 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../media/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: 'iceSotong-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceSotong-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Back-Button {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 20px 0 0 20px;
+}
+
+.Back-Button:hover {
+    cursor: pointer;
+}
+
+.Header {
+    font-family: 'iceSotong-Rg', sans-serif;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dictionary-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Dictionary {
+    margin-top: 30px;
+    width: 85vw;
+    height: 40vw;
+    border: 4px black solid;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.Dictionary::-webkit-scrollbar {
+    width: 12px;
+}
+
+.Dictionary::-webkit-scrollbar-thumb {
+    background-color: #888;
+    margin-right: 10px;
+}
+
+.Dictionary:hover::-webkit-scrollbar-thumb {
+    background-color: #217af4;
+}
+
+.Title {
+    font-family: 'iceSotong-Rg', sans-serif;
+    font-size: 100px;
+}
+
+.Detail {
+    font-family: 'iceSotong-Rg', sans-serif;
+    font-size: 60px;
+}
