@@ -71,3 +71,8 @@ body {
     font-family: 'iceSotong-Rg', sans-serif;
     font-size: 60px;
 }
+
+li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}

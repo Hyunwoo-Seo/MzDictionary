@@ -75,9 +75,13 @@ body {
     align-items: baseline;
     flex-wrap: wrap;
     border: 4px black solid;
-    border-radius: 40px;
     width: 80vw;
     height: 40vw;
     background-color: #ffffff;
     margin-top: 40px;
+    padding: 0px;
+}
+
+th {
+    border: 4px black solid;
 }
